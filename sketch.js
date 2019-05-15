@@ -42,7 +42,7 @@ function draw() {
 		garbageArr.map((el) => {
 			fill(el[2]);
 			noStroke();
-			rect(el[0], el[1], 20, 20);
+			rect(el[0], el[1], 35, 35);
 		})
 		timer();
 	} else if (GAME_OVER && !start) {
@@ -88,7 +88,7 @@ function timer() {
 	textAlign(CENTER);
 	fill('lightblue');
 	millisec--;
-	if ( millisec % 5 === 0) {
+	if ( millisec % 10 === 0) {
 		garbageArr.push([(Math.random() * width), (Math.random() * height), `rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`]);
 	}
 	if ( millisec == 0 ) {
