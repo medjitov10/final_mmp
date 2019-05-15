@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  background: -webkit-linear-gradient(250deg, #e05252 10%, #99e052 25%, #52e0e0 50%, #9952e0 75%, #e05252 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 60px;
+}
+
+ul {
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  background: rgba(144,238,144,.5);
+  display: flex;
+  list-style-type: none;
+}
+
+li:hover {
+  background: lightblue;
+}
+a {
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+}
+li {
+  padding: 15px;
+  border-left: 1px solid;
+  font-weight: bold;
+}
+
+li:first-child {
+  border-left: none;
+}
+
+.intro-div {
+  margin: 0 auto;
+}
+h2 {
+  font-size: 1.6em;
+  text-align: center;
+  text-align: center;
+  background: -webkit-linear-gradient(180deg, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p, em {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+form {
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+input {
+  font-size: 20px;
+  padding-left: 5px;
+  height: 50px;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.names {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.other {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+form div {
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+select {
+  width: 30%;
+}
+
+button {
+  background: rgba(144,238,144,.5);
+  height: 40px;
+  border-radius: 5px;
+
+  margin: 0 0 20px 20px;
+  font-size: 20px;
+}
+
+#myGame {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}

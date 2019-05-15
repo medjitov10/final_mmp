@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cleaning The Block</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#apply">Apply</a></li>
+      <li><a href="#tryGame">Game</a></li>
+    </ul>
+    <h1 id='home'>Cleaning Day</h1>
+    <div class='intro-div'>
+      <h2>To All NYC Residents</h2>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;New York is our home -
+       we want to keep it clean. Have you ever asked yourself if you can do something useful for your city? If the answer is yes, then this new initiative is for you.“Cleaning Day” is a program for all NYC residents. The main idea is to get together with your neighbors
+       to clean your block every last Sunday of the month.
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;We buy all tools and cleaning equipment. All you need to bring are your energy and comfortable clothes. Also, if you are willing to become the program manager for your block you will receive a monthly stipend. All volunteers will have free snacks and water.
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;How to apply? Just fill the application below. You need to pick whether you'd like to be a manager or volunteer. You will then receive an email with a schedule and further details.
+      </p>
+      <em>&nbsp;&nbsp;&nbsp;&nbsp;This is a great opportunity to make our city clean and shiny.</em>
+      <hr>
+    </div>
+    <h2 id='apply'>Application form</h2>
+    <form class="form" action="index.html" method="post">
+      <div class='names'>
+        <label for="first name">First Name</label>
+        <input type="text" name="fist name" required>
+      </div>
+      <div class="names">
+        <label for="last name">Last Name</label>
+        <input type="text" name="last name" required>
+      </div>
+      <div class='other'>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" required>
+      </div>
+      <div class="other">
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" required>
+      </div>
+      <div style='white-space: nowrap;' class='other'>
+        <label for="type">Type</label>
+        <select name="type" required>
+          <option value=""></option>
+          <option value="v">Volunteer</option>
+          <option value="o">Organization</option>
+        </select>
+      </div>
+      <button type='submit'>Submit</button>
+    </form>
+    <hr>
+    <h2 id='tryGame' >Try This Game</h2>
+    <p style='text-align: center;'>
+      Collect the garbage by hovering it. But, hurry up because our city can't wait )
+    </p>
+    <div id='myGame'></div>
+  </body>
+  <script type="text/javascript">
+    window.scroll({
+      top: 2500,
+      left: 0,
+      behavior: 'smooth'
+    });
+  </script>
+</html>
